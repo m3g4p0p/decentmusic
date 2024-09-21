@@ -4,30 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decent Music</title>
-  <style>
-    body {
-      font-family: 'Courier New', Courier, monospace;
-      background: linear-gradient(0deg, rgb(255, 0, 255) 50%, rgb(255, 255, 255) 100%);
-      background-attachment: fixed;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js" type="module"></script>
 </head>
 <body>
   <h1>Decent Music</h1>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4075489594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://nowthatsclass.bandcamp.com/album/if-youve-got-nothing">If You&#39;ve Got Nothing by CLASS</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=356189582/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://whybotheriowa.bandcamp.com/album/calling-all-goons">Calling All Goons by Why Bother?</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3383788782/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://totalpunkrecords.bandcamp.com/album/cclpii">CCLPII by CHERRY CHEEKS</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=249980511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://totalpunkrecords.bandcamp.com/album/reverberant-scratch-9-shots-in-tha-dark">Reverberant Scratch: 9 Shots in tha Dark by THA RETAIL SIMPS</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3477100475/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://rarevitaminrecords.bandcamp.com/album/cinematic-ocean-view">Cinematic Ocean View by Gas Kunst</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1985260749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://voxlowparis.bandcamp.com/album/s-t">S/T by Vox Low</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3212252077/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://wehateyoupleasedie.bandcamp.com/album/cant-wait-to-be-fine">Can&#39;t Wait To Be Fine by We Hate You Please Die</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3437637655/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://kitchenpeople.bandcamp.com/album/trendoid">Trendoid by Kitchen People</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2926412461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://straightarrowseu.bandcamp.com/album/on-top">On Top! by Straight Arrows</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1020400528/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://checkpoint.bandcamp.com/album/d-r-i-f-t">D R I F T by Checkpoint</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1678933114/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://tjcabot.bandcamp.com/album/king-grove-ep-2022">King Grove EP (2022) by TJ Cabot</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1665503241/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://abortedtortoise.bandcamp.com/album/a-album">A Album by Aborted Tortoise</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2418609892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://brutespring.bandcamp.com/album/turquoise-window">Turquoise Window by Brute Spring</a></iframe>
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2974393527/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://sextile.bandcamp.com/album/push">Push by Sextile</a></iframe>
-  <div class="background"></div>
+  <div id="container"></div>
+
+  <template id="template">
+    <iframe
+      style="border: 0; width: 100%; height: 120px;"
+      src="https://bandcamp.com/EmbeddedPlayer/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/album="
+      seamless
+    ></iframe>
+  </template>
 </body>
 </html>
